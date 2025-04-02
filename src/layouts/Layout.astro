@@ -1,0 +1,51 @@
+---
+import { AstroFont } from "astro-font";
+import AppHeader from "../components/AppHeader.astro";
+import "./../tailus.css";
+
+import Footer from "../components/Footer.astro";
+
+import GlowingBackground from "../components/GlowingBackground.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            name="description"
+            content="Template built with tailwindcss using Tailus blocks v2"
+        />
+        <title>Astralyss</title>
+
+        <AstroFont
+            config={[
+                {
+                    src: [],
+                    name: "Urbanist",
+                    preload: true,
+                    display: "swap",
+                    selector: "html",
+                    fallback: "sans-serif",
+                    googleFontsURL:
+                        "https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap",
+                },
+            ]}
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+        </style>
+    </head>
+</html> -->
+<body class="bg-white dark:bg-gray-950 dark">
+    <!-- La clase 'dark' está añadida aquí -->
+    <AppHeader />
+    <GlowingBackground />
+
+    <slot />
+    <Footer />
+</body>

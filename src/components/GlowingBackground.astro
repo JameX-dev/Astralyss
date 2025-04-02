@@ -1,0 +1,69 @@
+<!-- ---aqui asi como esta los blobs se mueven y cambian de tamaño
+const blobs = Array.from({ length: 6 }, (_, i) => ({
+  size: `${10 + Math.random() * 20}vw`, // Tamaño entre 10vw y 30vw
+  top: `${Math.random() * 100}vh`,
+  left: `${Math.random() * 100}vw`,
+  delay: `${Math.random() * 5}s`, // Delay aleatorio
+  duration: `${5 + Math.random() * 10}s`, // Duración entre 5s y 15s
+  color: [
+    "bg-blue-900/50", // Azul más oscuro con más presencia
+    "bg-blue-800/45",
+    "bg-blue-700/40",
+    "bg-blue-600/35",
+    "bg-blue-500/30",
+    "bg-blue-400/25"  // Azul más claro, pero sigue siendo fuerte
+  ][i % 6], 
+}));
+---
+
+<div class="fixed inset-0 -z-10 overflow-hidden">
+  {blobs.map((blob) => (
+    <div
+      class={`absolute ${blob.color} rounded-full blur-2xl opacity-40`}
+      style={{
+        width: blob.size,
+        height: blob.size,
+        top: blob.top,
+        left: blob.left,
+        animation: `pulse ${blob.duration} ease-in-out infinite alternate`,
+        animationDelay: blob.delay,
+      }}
+    ></div>
+  ))}
+</div>
+
+<style>
+@keyframes pulse {
+  0% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0 -->
+
+
+  ---
+const blobs = Array.from({ length: 6 }, (_, i) => ({
+  size: `${10 + Math.random() * 20}vw`, // Tamaño entre 10vw y 30vw
+  top: `${Math.random() * 100}vh`, // Posición aleatoria en la vertical
+  left: `${Math.random() * 100}vw`, // Posición aleatoria en la horizontal
+  color: [
+    "bg-blue-900/50", // Azul más oscuro con más presencia
+    "bg-blue-800/45",
+    "bg-blue-700/40",
+    "bg-blue-600/35",
+    "bg-blue-500/30",
+    "bg-blue-400/25"  // Azul más claro, pero sigue siendo fuerte
+  ][i % 6],
+}));
+---
+
+<div class="fixed inset-0 -z-10 overflow-hidden">
+  {blobs.map((blob) => (
+    <div
+      class={`absolute ${blob.color} rounded-full blur-2xl opacity-40`}
+      style={{
+        width: blob.size,
+        height: blob.size,
+        top: blob.top,
+        left: blob.left,
+      }}
+    ></div>
+  ))}
+</div>

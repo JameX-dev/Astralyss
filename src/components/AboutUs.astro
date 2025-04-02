@@ -1,0 +1,55 @@
+---
+import Container from "./Container.astro"
+
+---
+
+<div class="relative py-16" id="nosotros">
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <Container>
+    <div class="relative">
+      <div class="flex items-center justify-center -space-x-2">
+        
+        <!-- <img
+          loading="lazy"
+          width="300"
+          height="300"
+          src="/logos/logoAstralyss-av.svg"
+          alt="logo empresa"
+          class="z-10 h-36 w-36 rounded-full object-cover"
+        /> -->
+      
+        <img
+          loading="lazy"
+          width="300"
+          height="300"
+          src="/logos/logoAstralyss-avd.svg" 
+          alt="logo empresa"
+          class="relative z-10 h-36 w-36 rounded-full object-cover dark:hidden"
+        />
+
+        <!-- Logo para tema oscuro -->
+        <img
+          loading="lazy"
+          width="300"
+          height="300"
+          src="/logos/logoAstralyss-av.svg" 
+          alt="logo empresa"
+          class="relative z-10 h-36 w-36 rounded-full object-cover hidden dark:block"
+        />
+
+      </div>
+      <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Quiénes somos?</h1>
+        <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+          Somos una compañía emergente comprometida con ofrecer servicios de calidad, innovación y diseño moderno. Nuestro objetivo es potenciar el desarrollo y la imagen de tu empresa, ayudándote a destacar lo que realmente importa y a impulsar todo el valor que tu negocio tiene para ofrecer.
+        </p>
+        
+      </div>
+    </div>
+  </Container>
+</div>
+
+

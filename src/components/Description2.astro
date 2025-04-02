@@ -1,0 +1,176 @@
+---
+import Container from "./Container.astro";
+---
+
+<!-- <div id="solution">
+  <Container>
+    <div
+      class="flex flex-col-reverse md:flex-row-reverse md:justify-between text-gray-600 md:gap-6 lg:gap-12 lg:items-center"
+    >
+      <div class="md:5/12 lg:w-1/2">
+        <img
+          src="./images/pie2.svg"
+          alt="image"
+          loading="lazy"
+          width=""
+          height=""
+          class="w-full mt-28 md:mt-0"
+        />
+      </div>
+      <div class="md:7/12 lg:w-1/2">
+        <h2
+          class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
+        >
+          Innovación y Optimización
+        </h2>
+        <p class="my-8 text-gray-600 dark:text-gray-300 font-[Montserrat]">
+          Desarrollamos sitios web de alto rendimiento, optimizados para SEO,
+          combinando tecnología de vanguardia y un diseño optimizado para
+          garantizar velocidad, eficiencia y calidad.
+          <br />
+          <br /> Nos enfocamos en cada detalle para ofrecer experiencias fluidas,
+          intuitivas y visualmente impactantes, asegurando que su negocio crezca
+          con una plataforma ágil, confiable y de alto nivel.
+        </p>
+        <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+          <div class="mt-8 flex gap-4 md:items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/20"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-cyan-500 dark:text-cyan-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.5 15.692h3.192V12.5h-.884v2.308H15.5v.884ZM5.308 9.5h.884V7.192H8.5v-.884H5.308V9.5ZM9 20v-2H3V4h18v14h-6v2H9Zm-5-3h16V5H4v12Zm0 0V5v12Z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="w-5/6">
+              <h3 class="font-semibold text-lg text-gray-700 dark:text-sky-400">
+                Diseño Funcional
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Interfaces diseñadas para una carga rápida y un rendimiento
+                óptimo.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 flex gap-4 md:items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/20"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-cyan-500 dark:text-cyan-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="M9.75 19a.5.5 0 0 1 .5-.5h3.5a.5.5 0 0 1 0 1h-3.5a.5.5 0 0 1-.5-.5"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M10.17 2.25h3.66c.535 0 .98 0 1.345.03c.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073c.03.365.03.81.03 1.345v11.66c0 .535 0 .98-.03 1.345c-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27c-.365.03-.81.03-1.344.03H10.17c-.535 0-.98 0-1.345-.03c-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.2c-.172-.338-.24-.694-.27-1.074c-.03-.365-.03-.81-.03-1.345V6.17c0-.535 0-.98.03-1.345c.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 7.752 2.55c.337-.172.693-.24 1.073-.27c.365-.03.81-.03 1.345-.03M8.947 3.775c-.287.023-.424.065-.514.111a1.25 1.25 0 0 0-.547.547c-.046.09-.088.227-.111.514c-.024.296-.025.68-.025 1.253v11.6c0 .572 0 .957.025 1.252c.023.288.065.425.111.515c.12.236.311.427.547.547c.09.046.227.088.514.111c.296.024.68.025 1.253.025h3.6c.572 0 .957 0 1.252-.025c.288-.023.425-.065.516-.111a1.25 1.25 0 0 0 .546-.547c.046-.09.088-.227.111-.515c.024-.295.025-.68.025-1.252V6.2c0-.572 0-.957-.025-1.253c-.023-.287-.065-.424-.111-.514a1.25 1.25 0 0 0-.546-.547c-.091-.046-.228-.088-.515-.111a9 9 0 0 0-.637-.023l-.124.373c-.105.314-.158.472-.255.588a.8.8 0 0 1-.32.231c-.142.056-.308.056-.64.056h-2.154c-.332 0-.498 0-.64-.056a.8.8 0 0 1-.32-.23c-.097-.117-.15-.275-.255-.59l-.124-.372a9 9 0 0 0-.637.023"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="w-5/6">
+              <h3
+                class="font-semibold text-lg text-gray-700 dark:text-cyan-300"
+              >
+                First Mobile
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Optimizado para dispositivos móviles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div> -->
+
+
+<div id="solution" class="relative py-16">
+  <!-- Fondo borroso -->
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <Container>
+    <div
+      class="relative flex flex-col-reverse md:flex-row-reverse md:justify-between text-gray-600 md:gap-6 lg:gap-12 lg:items-center"
+    >
+      <div class="md:5/12 lg:w-1/2">
+        <img
+          src="./images/pie2.svg"
+          alt="image"
+          loading="lazy"
+          class="w-full mt-28 md:mt-0"
+        />
+      </div>
+      <div class="md:7/12 lg:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+          Innovación y Optimización
+        </h2>
+        <p class="my-8 text-gray-600 dark:text-gray-300 font-[Montserrat]">
+          Desarrollamos sitios web de alto rendimiento, optimizados para SEO,
+          combinando tecnología de vanguardia y un diseño optimizado para
+          garantizar velocidad, eficiencia y calidad.
+          <br /><br /> Nos enfocamos en cada detalle para ofrecer experiencias fluidas,
+          intuitivas y visualmente impactantes, asegurando que su negocio crezca
+          con una plataforma ágil, confiable y de alto nivel.
+        </p>
+        <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+          <div class="mt-8 flex gap-4 md:items-center">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-cyan-500 dark:text-cyan-400"
+              >
+                <path fill="currentColor" d="M15.5 15.692h3.192V12.5h-.884v2.308H15.5v.884ZM5.308 9.5h.884V7.192H8.5v-.884H5.308V9.5ZM9 20v-2H3V4h18v14h-6v2H9Zm-5-3h16V5H4v12Zm0 0V5v12Z"></path>
+              </svg>
+            </div>
+
+            <div class="w-5/6">
+              <h3 class="font-semibold text-lg text-gray-700 dark:text-sky-400">Diseño Funcional</h3>
+              <p class="text-gray-500 dark:text-gray-400">Interfaces diseñadas para una carga rápida y un rendimiento óptimo.</p>
+            </div>
+          </div>
+          <div class="pt-4 flex gap-4 md:items-center">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/20">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-cyan-500 dark:text-cyan-400"
+              >
+                <path fill="currentColor" d="M9.75 19a.5.5 0 0 1 .5-.5h3.5a.5.5 0 0 1 0 1h-3.5a.5.5 0 0 1-.5-.5"/>
+                <path fill="currentColor" d="M10.17 2.25h3.66c.535 0 .98 0 1.345.03c.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073c.03.365.03.81.03 1.345v11.66c0 .535 0 .98-.03 1.345c-.03.38-.098.736-.27 1.073a2.75 2.75 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27c-.365.03-.81.03-1.344.03H10.17c-.535 0-.98 0-1.345-.03c-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.2c-.172-.338-.24-.694-.27-1.074c-.03-.365-.03-.81-.03-1.345V6.17c0-.535 0-.98.03-1.345c.03-.38.098-.736.27-1.073A2.75 2.75 0 0 1 7.752 2.55c.337-.172.693-.24 1.073-.27c.365-.03.81-.03 1.345-.03"/>
+              </svg>
+            </div>
+
+            <div class="w-5/6">
+              <h3 class="font-semibold text-lg text-gray-700 dark:text-cyan-300">First Mobile</h3>
+              <p class="text-gray-500 dark:text-gray-400">Optimizado para dispositivos móviles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>

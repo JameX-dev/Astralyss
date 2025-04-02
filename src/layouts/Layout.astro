@@ -12,7 +12,11 @@ import GlowingBackground from "../components/GlowingBackground.astro";
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/logos/iconAstralyss.svg" />
+        <!-- <link rel="icon" type="image/svg+xml" href="/logos/iconAstralyss.svg" /> -->
+
+        <link id="favicon-light" rel="icon" type="image/svg+xml" href="/logos/iconAstralyss-dark.svg" media="(prefers-color-scheme: light)">
+        <link id="favicon-dark" rel="icon" type="image/svg+xml" href="/logos/iconAstralyss.svg" media="(prefers-color-scheme: dark)">
+
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content="Astralyss - Empresa innovadora especializada en servicios tecnológicos, diseño moderno y soluciones personalizadas para potenciar tu negocio." />
         <meta name="keywords" content="Astralyss, innovación, diseño moderno, servicios tecnológicos, desarrollo web, aplicaciones móviles, IA, desarrollo de software, consultoria, first mobile" />

@@ -1,0 +1,19 @@
+---
+export const prerender = true;
+
+const pages = [
+  { loc: "https://www.astralyss.com/", lastmod: "2025-04-13", priority: "1.0" },
+  { loc: "https://www.astralyss.com/about", lastmod: "2025-04-10", priority: "0.8" },
+  { loc: "https://www.astralyss.com/contact", lastmod: "2025-04-11", priority: "0.7" },
+];
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {pages.map((page) => (
+    <url>
+      <loc>{page.loc}</loc>
+      <lastmod>{page.lastmod}</lastmod>
+      <priority>{page.priority}</priority>
+    </url>
+  ))}
+</urlset>
